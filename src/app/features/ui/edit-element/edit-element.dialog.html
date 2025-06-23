@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Edit periodic value</h2>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>{{ data.property }}</mat-label>
+    <input matInput [(ngModel)]="valueInput"/>
+  </mat-form-field>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="valueInput()">Save</button>
+  </div>
+</div>
